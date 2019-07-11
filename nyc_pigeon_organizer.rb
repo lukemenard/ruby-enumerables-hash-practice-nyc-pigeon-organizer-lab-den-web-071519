@@ -16,5 +16,10 @@ def nyc_pigeon_organizer(data)
     output[number] = Hash.new {
       |key, value| key[value] = []
     }
+    data.each do |char, items|
+      output[name][char]
+      items.each do |x, array|
+        array.each do |bird_name|
+          output[bird)name][char] << feature.to_s if name == nombre
   end
 end
