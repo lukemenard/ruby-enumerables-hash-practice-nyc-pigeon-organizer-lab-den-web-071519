@@ -16,10 +16,13 @@ def nyc_pigeon_organizer(data)
     output[number] = Hash.new {
       |key, value| key[value] = []
     }
-    data.each do |attribute, items|
-      pigeon_hash[nombre][attribute]
-      items.each do |feature, arr|
-        arr.each do |name|
-          pigeon_hash[name][attribute] << feature.to_s if name == nombre
+    data.each do |char, items|
+      output[number][char]
+      items.each do |feature, array|
+        array.each do |name|
+          output[name][char] << feature.to_s if name == number
+        end
+      end
+    end
   end
 end
