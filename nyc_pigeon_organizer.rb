@@ -18,9 +18,10 @@ def nyc_pigeon_organizer(data)
     }
     data.each do |char, items|
       output[number][char]
-      items.each do |feature, array|
+      items.each do |x, array|
         array.each do |name|
-          output[name][char] << feature.to_s if name == number
+          if name == number
+            output[name][char] << x.to_s
         end
       end
     end
