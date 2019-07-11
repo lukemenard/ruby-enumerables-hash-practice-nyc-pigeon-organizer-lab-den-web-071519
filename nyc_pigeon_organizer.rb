@@ -22,6 +22,7 @@ def nyc_pigeon_organizer(data)
         array.each do |name|
           if name == number
             output[name][char] << x.to_s
+          end
         end
       end
     end
