@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
   
   names.each do |number|
     output[number] = Hash.new {
-      
+      |key, value| key[value]
     }
   
 end
