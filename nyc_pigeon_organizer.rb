@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
   data.each do |char, items|
     items.each do |x, array|
       array.each do |name|
-        if !names.include?(name)
+        if names.include?(name) == false
           names << name
         end
       end
