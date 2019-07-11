@@ -16,5 +16,5 @@ def nyc_pigeon_organizer(data)
     output[number] = Hash.new {
       |key, value| key[value] = []
     }
-  
+  end
 end
